@@ -33,104 +33,15 @@ body {
     display: flex;
 }
 
-
-/* this is the first phone number */
-
-#store-phone-number {
-    align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
-    position: absolute;
-    padding-top: 78px;
-    font-family: average sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-/* this is the second phone number */
-
-#store-phone-number-two {
-    align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
-    position: absolute;
-    padding-top: 193px;
-    font-family: average sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-/* this is the third phone number */
-
-#store-phone-number-three {
-    align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
-    position: absolute;
-    padding-top: 308px;
-    font-family: average sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-/* this is the first store address */
-
-#store-address {
-    align-items: center;
+.stores-list {
     flex-grow: 1;
-    display: flex;
+    overflow-y: scroll;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 8px;
-    line-height: 34px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #514C4C;
-    font-style: normal;
-    position: absolute;
-}
-
-
-/* this is the second store address */
-
-#store-address-two {
-    align-items: center;
-    flex-grow: 1;
-    display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 125px;
-    line-height: 34px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #514C4C;
-    font-style: normal;
-    position: absolute;
-}
-
-
-/* this is the third store address */
-
-#store-address-three {
-    align-items: center;
-    flex-grow: 1;
-    display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 242px;
-    line-height: 34px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #514C4C;
-    font-style: normal;
-    position: absolute;
 }
 
 .stores-list-container {
-    width: 400px;
+    width: 280px;
     position: absolute;
     z-index: 100;
     background-color: #fff;
@@ -138,6 +49,9 @@ body {
     top: 320px;
     border-radius: 30px;
     bottom: 20px;
+    display: flex;
+    padding-bottom: 30px;
+    overflow-y: hidden;
 }
 
 .search {
@@ -165,47 +79,45 @@ body {
     outline: none;
 }
 
-#store-phone-number:before {
-    content: '';
-    align-items: center;
-    border-top: 1px solid #979797;
-    position: absolute;
-    display: block;
-    top: 105.12%;
-    width: 22.4rem;
-    left: 14.22%;
-    right: 1.22%;
-    margin: 1 0.3em;
-    z-index: -1;
-    bottom: 0.29%;
+.store-container {
+    border-bottom: 1px solid #979797;
+    display: flex;
 }
 
-#store-phone-number-two:before {
-    content: '';
-    align-items: center;
-    border-top: 1px solid #979797;
-    position: absolute;
-    display: block;
-    top: 105.12%;
-    width: 22.4rem;
-    left: 14.22%;
-    right: 1.22%;
-    margin: 1 0.3em;
-    z-index: -1;
-    bottom: 0.29%;
+.store-info-container {
+    flex-grow: 1;
 }
 
-#store-phone-number-three:before {
-    content: '';
-    align-items: center;
-    border-top: 1px solid #979797;
-    position: absolute;
+.store-address {
+    font-size: 21px;
+    color: #514C4C;
+    margin-top: 30px;
+}
+
+.store-address span {
     display: block;
-    top: 105.12%;
-    width: 22.4rem;
-    left: 14.22%;
-    right: 1.22%;
-    margin: 1 0.3em;
-    z-index: -1;
-    bottom: 0.29%;
+}
+
+.store-phone-number {
+    color: #B5ADAD;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.store-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #B5ADAD;
+    background-color: #454E53;
+    font-size: 12px;
+}
+
+.store-number-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
